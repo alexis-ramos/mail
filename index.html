@@ -8,6 +8,28 @@
     <style type="text/css">
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
+      @media screen and (max-width: 480px) {
+        .two-column .column,
+        .three-column .column {
+          max-width: 100% !important;
+        }
+        .two-column img {
+          max-width: 100% !important;
+        }
+        .three-column img {
+          max-width: 50% !important;
+        }
+      }
+
+      @media screen and (min-width: 481px) and (max-width: 640px) {
+        .three-column .column {
+          max-width: 33% !important;
+        }
+        .two-column .column {
+          max-width: 50% !important;
+        }
+      }
+
       * {
         margin: 0px;
         padding: 0px;
@@ -30,18 +52,28 @@
       }
     </style>
   </head>
-  <body style="margin: 0 auto">
+  <body style="margin: 0 auto; background-color: aliceblue">
     <table
       class="primary-table"
       bgcolor="#ffffff"
       align="center"
-      width="100%"
       border="0"
       cellspacing="0"
       cellpadding="0"
+      align="center"
+      width="100%"
+      style="max-width: 600px"
     >
       <tr>
-        <td align="center">
+        <td
+          align="center"
+          style="
+            padding-top: 20px;
+            padding-right: 0;
+            padding-bottom: 20px;
+            padding-left: 0;
+          "
+        >
           <a
             href="http://www.codigoqro.mx/"
             target="_blank"
@@ -63,7 +95,7 @@
       </tr>
 
       <tr>
-        <td class="destacado">
+        <td class="destacado" align="center">
           <table
             width="100%"
             bgcolor="#1F2228"
@@ -71,13 +103,13 @@
             border="0"
           >
             <tr>
-              <td width="50%" bgcolor="#E72558">
+              <td width="50%" bgcolor="#D60143">
                 <p style="width: 100%; font-size: 20pt">La información</p>
                 <p style="width: 100%; font-weight: 800; font-size: 20pt">
                   NO SE VENDE
                 </p>
               </td>
-              <td width="50%" bgcolor="#E72558" style="padding-left: 8%">
+              <td width="50%" bgcolor="#D60143" style="padding-left: 12%">
                 <img
                   src="http://codigoqro.com.mx/assets-mail/iconoCorreo.png"
                   alt="icono-correo"
@@ -96,7 +128,7 @@
             <tr>
               <td width="100%">
                 <img
-                  src="http://codigoqro.com.mx/assets-mail/comillas.png"
+                  src="http://codigoqro.com.mx/assets-mail/comillas-dos.png"
                   alt="comillas"
                   style="width: 5%; max-width: 7; float: left; margin: 1%"
                 />
@@ -128,9 +160,9 @@
                 </p>
                 <a href="" target="_blank">
                   <img
-                    src="http://codigoqro.com.mx/assets-mail/btn-nota.png"
+                    src="http://codigoqro.com.mx/assets-mail/btn-nota-dos.png"
                     alt="notas"
-                    style="max-width: 15%; width: 14%; padding: 2%"
+                    style="max-width: 15%; width: 17%; padding: 2%"
                   />
                 </a>
               </td>
@@ -154,7 +186,7 @@
                     <td width="40%" align="left">
                       <a href="http://www.codigoqro.com.mx/edicion_del_dia.pdf">
                         <img
-                          src="http://codigoqro.com.mx/assets-mail/btn-edicion.png"
+                          src="http://codigoqro.com.mx/assets-mail/btn-edicion-dos.png"
                           alt="btn-edicion"
                           style="max-width: 100%; width: 80%"
                         />
@@ -226,7 +258,7 @@
       </tr>
       <tr>
         <td
-          bgcolor="#E72558"
+          bgcolor="#D60143"
           style="padding-top: 2%; padding-bottom: 2%"
           align="center"
         >
