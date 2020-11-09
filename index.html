@@ -19,12 +19,21 @@
         .three-column img {
           max-width: 50% !important;
         }
+
+        .text-title p {
+          font-size: 12pt !important;
+        }
+
+        .text-info p {
+          font-size: 8pt !important;
+        }
       }
 
       @media screen and (min-width: 481px) and (max-width: 640px) {
         .three-column .column {
           max-width: 33% !important;
         }
+
         .two-column .column {
           max-width: 50% !important;
         }
@@ -56,7 +65,7 @@
   <body style="margin: 0 auto; background-color: #d8d8d875">
     <div class="primary-container">
       <table
-        class="primary-table"
+        class="primary-table column"
         border="0"
         cellspacing="0"
         cellpadding="0"
@@ -112,7 +121,9 @@
             >
               <tr>
                 <td width="50%" bgcolor="#D60143">
-                  <p style="width: 100%; font-size: 20pt">La información</p>
+                  <p class="text-info" style="width: 100%; font-size: 20pt">
+                    La información
+                  </p>
                   <p style="width: 100%; font-weight: 800; font-size: 20pt">
                     NO SE VENDE
                   </p>
@@ -154,18 +165,21 @@
                     style="padding-top: 10px"
                   >
                     <tr>
-                      <td
-                        style="
-                          width: 50%;
-                          font-family: 'Montserrat', sans-serif;
-                          font-weight: 800;
-                          font-size: 20pt;
-                          color: #d60143;
-                        "
-                      >
-                        EN LA WEB
+                      <td class="text-title" align="center">
+                        <p
+                          style="
+                            width: 50%;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 800;
+                            font-size: 20pt;
+                            color: #d60143;
+                          "
+                        >
+                          EN LA WEB
+                        </p>
                       </td>
                       <td
+                        class="text-title"
                         style="
                           width: 50%;
                           font-family: 'Montserrat', sans-serif;
@@ -174,7 +188,9 @@
                           color: #ffffff;
                         "
                       >
-                        Malbaratan propiedad por crisis durante pandemia: CMIC
+                        <p>
+                          Malbaratan propiedad por crisis durante pandemia: CMIC
+                        </p>
                       </td>
                     </tr>
                   </table>
@@ -191,7 +207,7 @@
                           style="width: 90%; border-radius: 3%"
                         />
                       </td>
-                      <td width="50%">
+                      <td width="50%" class="text-info">
                         <img
                           src="http://codigoqro.com.mx/assets-mail/comillas-dos.png"
                           alt="comillas"
