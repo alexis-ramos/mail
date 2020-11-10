@@ -27,6 +27,14 @@
         .text-info p {
           font-size: 8pt !important;
         }
+
+        .mobile-view {
+          display: inline-block !important;
+        }
+
+        .desktop-view {
+          display: none !important;
+        }
       }
 
       @media screen and (min-width: 481px) and (max-width: 640px) {
@@ -120,7 +128,7 @@
               border="0"
             >
               <tr>
-                <td width="50%" bgcolor="#D60143">
+                <td width="50%" bgcolor="#D60143" align="center">
                   <p class="text-info" style="width: 100%; font-size: 20pt">
                     La información
                   </p>
@@ -153,7 +161,115 @@
               style="max-width: 700px; display: inline-block"
               class="big-text column"
             >
-              <tr>
+              <!-- vista movil -->
+              <tr class="mobile-view" style="display: none">
+                <td>
+                  <table width="100%">
+                    <tr>
+                      <td>
+                        <p
+                          style="
+                            width: 100%;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 800;
+                            font-size: 15pt;
+                            color: #d60143;
+                          "
+                        >
+                          EN LA WEB
+                        </p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <table>
+                          <tr>
+                            <td style="padding: 1%">
+                              <p
+                                style="
+                                  width: 100%;
+                                  font-family: 'Montserrat', sans-serif;
+                                  font-weight: 800;
+                                  font-size: 12pt;
+                                  color: #ffffff;
+                                "
+                              >
+                                Malbaratan propiedad por crisis durante
+                                pandemia: CMIC
+                              </p>
+                              <img
+                                src="http://codigoqro.com.mx/assets-mail/comillas-dos.png"
+                                alt="comillas"
+                                style="
+                                  width: 5%;
+                                  max-width: 5%;
+                                  float: left;
+                                  padding-right: 3%;
+                                "
+                              />
+                              <p
+                                style="
+                                  color: #ffffff;
+                                  text-align: justify;
+                                  padding-top: 1%;
+                                  font-size: 11pt;
+                                  font-style: italic;
+                                "
+                              >
+                                Algunas personas que se han visto en la
+                                necesidad de vender su propiedad, por la crisis
+                                económica derivada de la contingencia sanitaria
+                                por el COVID-19, la han tenido que malbaratar,
+                                reconoció Álvaro Ugalde Ríos, presidente de la
+                                Cámara Mexicana de la Industria de la
+                                Construcción (CMIC) en Querétaro.
+                              </p>
+                              <a
+                                href=" http://www.codigoqro.mx/2020/11/09/malbaratan-propiedad-por-crisis-durante-pandemia-cmic/"
+                                target="_blank"
+                              >
+                                <img
+                                  src="http://codigoqro.com.mx/assets-mail/btn-nota-dos.png"
+                                  alt="notas"
+                                  style="
+                                    max-width: 15%;
+                                    width: 15%;
+                                    float: left;
+                                    padding-top: 2%;
+                                  "
+                                />
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img
+                                src="http://www.codigoqro.mx/wp-content/uploads/2020/11/Propiedad-CMIC-pandemia.jpg"
+                                alt="nota-del-dia"
+                                style="width: 95%; border-radius: 5%"
+                              />
+                            </td>
+                          </tr>
+                        </table>
+                        <hr
+                          style="
+                            margin: auto;
+                            margin-top: 7%;
+                            background-color: #d60143;
+                            padding-top: 2px;
+                            border: 0;
+                            width: 80%;
+                          "
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- fin vista movil -->
+
+              <tr class="desktop-view">
                 <td>
                   <table
                     width="100%"
@@ -165,10 +281,10 @@
                     style="padding-top: 10px"
                   >
                     <tr>
-                      <td class="text-title" align="center">
+                      <td align="center">
                         <p
                           style="
-                            width: 50%;
+                            width: 100%;
                             font-family: 'Montserrat', sans-serif;
                             font-weight: 800;
                             font-size: 20pt;
@@ -196,7 +312,7 @@
                   </table>
                 </td>
               </tr>
-              <tr>
+              <tr class="desktop-view">
                 <td style="padding-left: 3%; padding-right: 3%">
                   <table width="100%">
                     <tr>
